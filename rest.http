@@ -1,0 +1,20 @@
+POST http://localhost:1337/api/comment
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI3NjgxOTUyLCJleHAiOjE3MzAyNzM5NTJ9.J_-MyE7ieACiy5rLkmq6rETljRkP_kjRkqdaOdmCfa0
+Content-Type: application/json
+
+{
+    "data": {
+        "body": "first Comment",
+        "locale": "bn"
+    }
+}
+
+###
+PUT http://localhost:1337/api/comment/badb297mssxzhojr6dowh6zj/like
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI3NjgxOTUyLCJleHAiOjE3MzAyNzM5NTJ9.J_-MyE7ieACiy5rLkmq6rETljRkP_kjRkqdaOdmCfa0
+Content-Type: application/json
+
+###
+GET http://localhost:1337/api/comments?populate=*
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI3NjgxOTUyLCJleHAiOjE3MzAyNzM5NTJ9.J_-MyE7ieACiy5rLkmq6rETljRkP_kjRkqdaOdmCfa0
+Content-Type: application/json
